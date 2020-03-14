@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.jingdev.pub/"/>
-  <updated>2020-03-13T12:49:45.185Z</updated>
+  <updated>2020-03-14T04:23:22.649Z</updated>
   <id>http://blog.jingdev.pub/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>netplan配置</title>
+    <link href="http://blog.jingdev.pub/2020/03/14/netplan%E9%85%8D%E7%BD%AE/"/>
+    <id>http://blog.jingdev.pub/2020/03/14/netplan%E9%85%8D%E7%BD%AE/</id>
+    <published>2020-03-14T04:16:25.000Z</published>
+    <updated>2020-03-14T04:23:22.649Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;netplan网络配置（Ubuntu-18-04，DGXOS-4-x）&quot;&gt;&lt;a href=&quot;#netplan网络配置（Ubuntu-18-04，DGXOS-4-x）&quot; class=&quot;headerlink&quot; title=&quot;netplan网络配置（Ubuntu
+        
+      
+    
+    </summary>
+    
+    
+      <category term="系统" scheme="http://blog.jingdev.pub/categories/%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+      <category term="技术" scheme="http://blog.jingdev.pub/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
