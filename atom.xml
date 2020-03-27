@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.jingdev.pub/"/>
-  <updated>2020-03-14T05:55:53.080Z</updated>
+  <updated>2020-03-14T11:18:14.000Z</updated>
   <id>http://blog.jingdev.pub/</id>
   
   <author>
@@ -21,20 +21,16 @@
     <link href="http://blog.jingdev.pub/2020/03/14/netplan%E9%85%8D%E7%BD%AE/"/>
     <id>http://blog.jingdev.pub/2020/03/14/netplan%E9%85%8D%E7%BD%AE/</id>
     <published>2020-03-14T04:16:25.000Z</published>
-    <updated>2020-03-14T05:55:53.080Z</updated>
+    <updated>2020-03-14T11:18:14.000Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;blockquote&gt;
+      &lt;blockquote&gt;
 &lt;p&gt;从Ubuntu 18.04（DGX OS 4.x）起，系统默认使用netplan进行网络管理&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&quot;配置方法&quot;&gt;&lt;a href=&quot;#配置方法&quot; class=&quot;headerlink&quot;
-        
-      
+&lt;h3 id=&quot;配置方法&quot;&gt;&lt;a href=&quot;#配置方法&quot; class=&quot;headerlink&quot; title=&quot;配置方法&quot;&gt;&lt;/a&gt;配置方法&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;配置文件&lt;/strong&gt;   &lt;code&gt;/etc/netplan/*.yaml&lt;/code&gt; (&lt;code&gt;如：/etc/netplan/config.yaml&lt;/code&gt;)&lt;br&gt;&lt;strong&gt;解析配置并应用&lt;/strong&gt;    &lt;code&gt;sudo netplan apply&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;配置为DHCP&quot;&gt;&lt;a href=&quot;#配置为DHCP&quot; class=&quot;headerlink&quot; title=&quot;配置为DHCP&quot;&gt;&lt;/a&gt;配置为DHCP&lt;/h3&gt;&lt;p&gt;要让名为“enp3s0”的接口通过DHCP获取地址，须创建具有以下内容的YAML文件：&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;network:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  version: 2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  renderer: networkd&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  ethernets:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    enp3s0:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      dhcp4: true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
